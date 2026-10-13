@@ -4,25 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Printer2U | Compatible Toner Cartridges</title>
-  <link rel="stylesheet" href="styles.css" />
   <style>
     body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f8f9fc; color: #333; }
     header { background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 15px 40px; display: flex; justify-content: space-between; align-items: center; }
     header h1 { color: #0078d7; font-weight: 700; }
     nav a { margin: 0 15px; text-decoration: none; color: #333; font-weight: 500; }
     nav a:hover { color: #0078d7; }
-    .btn { padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: 600; }
+    .btn { padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: 600; display: inline-block; }
     .btn-primary { background: #0078d7; color: #fff; }
     .btn-secondary { border: 2px solid #0078d7; color: #0078d7; }
-    .hero { display: flex; align-items: center; justify-content: space-between; padding: 60px 40px; background: linear-gradient(to right, #eaf3ff, #ffffff); }
-    .hero-text { max-width: 50%; }
-    .hero-text h2 { font-size: 2.5em; color: #222; }
+    .hero { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 60px 40px; background: linear-gradient(to right, #eaf3ff, #ffffff); }
+    .hero-text { max-width: 500px; }
+    .hero-text h2 { font-size: 2.5em; color: #222; margin-bottom: 10px; }
     .features, .products, .cta { text-align: center; padding: 60px 40px; }
     .features h3, .products h3, .cta h3 { color: #0078d7; margin-bottom: 20px; }
     .feature-grid, .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
     .feature, .product { background: #fff; border-radius: 8px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
     .product img { width: 100%; border-radius: 5px; }
     footer { background: #0078d7; color: #fff; text-align: center; padding: 20px; font-size: 0.9em; }
+    @media (max-width: 768px) {
+      .hero { flex-direction: column; text-align: center; }
+      .hero-text { max-width: 100%; }
+    }
   </style>
 </head>
 <body>
